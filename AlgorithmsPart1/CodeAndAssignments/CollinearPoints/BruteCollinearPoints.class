@@ -52,9 +52,9 @@ public class BruteCollinearPoints {
         return (LineSegment[]) segments.toArray();
     }// the line segments
 
-    private void throwingArgument() {throw new IllegalArgumentException();}
+    private void throwingArgument() {throw new IllegalArgumentException("Duplicates exist");}
     private <T> void throwingArgument(T p) {
         if(p == null) 
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("something is null");
     }
 }
