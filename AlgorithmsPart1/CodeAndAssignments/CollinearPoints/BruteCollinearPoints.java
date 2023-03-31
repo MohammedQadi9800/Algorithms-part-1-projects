@@ -8,7 +8,7 @@ public class BruteCollinearPoints {
 
     public BruteCollinearPoints(Point[] points) {
         
-        if (points == null) { throwingArgument(); }
+        throwingArgument(points);
         for(int i = 0; i < points.length; i++) {
             throwingArgument(points[i]);
             for(int j = 0; j < points.length; j++) {
@@ -53,7 +53,7 @@ public class BruteCollinearPoints {
     }// the line segments
 
     private void throwingArgument() {throw new IllegalArgumentException();}
-    private void throwingArgument(Point p) {
+    private <T> void throwingArgument(T p) {
         if(p == null) 
             throw new IllegalArgumentException();
     }
