@@ -17,7 +17,7 @@ public class Solver {
         }
     
         // sequence of boards in a shortest solution; null if unsolvable
-        public Iterable<Board> solution() {
+        public Iterable<Board> solution () {
             
         }
     
